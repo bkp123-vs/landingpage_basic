@@ -4,18 +4,17 @@
     --my-font: 'Golos Text', sans-serif;
 }
 
-/* Reset  */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Core stylings  */
-/* which is minimum stylings */
+/* Core */
+/* which is very minimum stylings */
 img {
     width: 100%;
-    /* percentage represents relative */
     height: 100%;
 }
 
@@ -24,7 +23,7 @@ a {
     color: #000;
 }
 
-/* utility class  */
+/* Utility Classes */
 .active-link {
     color: #000 !important;
 }
@@ -35,7 +34,7 @@ a {
     padding: 1.25rem 2.25rem;
     border-radius: 30px;
     border: 1px solid #010e2d;
-    transition: .2s ease;
+    transition: .2s all;
 }
 
 .btn-primary:hover {
@@ -43,19 +42,32 @@ a {
     color: #000 !important;
 }
 
-/* header  */
+.btn-secondary {
+    color: #010e2d;
+    padding: 1.25rem 2.25rem;
+    border-radius: 30px;
+    transition: .2s all;
+    border: 1px solid #999;
+    font-weight: 600;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1.25rem;
+}
+
+/* header */
 header {
     display: flex;
-    flex-direction: row;
-    /* main axis*/
+    flex-direction: row; /* main-axis */
     justify-content: space-between;
-    align-items: center;
-    /*column cross axis*/
+    align-items: center; /* cross-axis */
 }
 
 header .logo {
     max-width: 120px;
-    /* border: 1px solid red; */
 }
 
 header .nav-links a {
@@ -65,8 +77,59 @@ header .nav-links a {
     font-weight: 500;
 }
 
-
 header .nav-links a:last-child {
     margin-left: 100px;
     margin-right: 20px;
+}
+
+/* section: hero */
+#hero {
+    margin-top: 3.5rem;
+}
+
+#hero .hero-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+#hero .hero-container .hero-title {
+    font-family: var(--my-font);
+    font-size: 3.5rem;
+    color: #010e2d;
+}
+
+#hero .hero-container .text-container .hero-text {
+    font-family: var(--my-font);
+    margin-top: 1.25rem;
+    line-height: 1.7;
+    color: #999;
+}
+
+#hero .hero-container .buttons-container {
+    margin-top: 2rem;
+}
+
+#hero .hero-container .buttons-container a {
+    font-family: var(--my-font);
+}
+
+#hero .hero-container .buttons-container a:nth-child(2) {
+    margin-left: .5rem;
+}
+
+/* section: brands */
+#brands {
+    margin-top: 8rem;
+}
+
+#brands .brands-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    grid-gap: 20px;
+}
+
+#brands .brands-container .img-container {
+    max-width: 100px;
 }
