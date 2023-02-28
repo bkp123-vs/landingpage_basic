@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --my-font: 'Golos Text', sans-serif;
+}
+
+/* Reset  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Core stylings  */
+/* which is minimum stylings */
+img {
+    width: 100%;
+    /* percentage represents relative */
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* utility class  */
+.active-link {
+    color: #000 !important;
+}
+
+.btn-primary {
+    background-color: #010e2d;
+    color: white !important;
+    padding: 1.25rem 2.25rem;
+    border-radius: 30px;
+    border: 1px solid #010e2d;
+    transition: .2s ease;
+}
+
+.btn-primary:hover {
+    background: #fff;
+    color: #000 !important;
+}
+
+/* header  */
+header {
+    display: flex;
+    flex-direction: row;
+    /* main axis*/
+    justify-content: space-between;
+    align-items: center;
+    /*column cross axis*/
+}
+
+header .logo {
+    max-width: 120px;
+    /* border: 1px solid red; */
+}
+
+header .nav-links a {
+    margin-left: 35px;
+    font-family: var(--my-font);
+    color: #999;
+    font-weight: 500;
+}
+
+
+header .nav-links a:last-child {
+    margin-left: 100px;
+    margin-right: 20px;
+}
